@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rick the Cucumber
+  #### Ok, fellows, so here is my pat project called Rick the Cucumber. It is based on Rick and Morty TV show [API](https://rickandmortyapi.com/). It still on development stage. That mean that I continue to add new features and refactor it. So, as they say on TV, please, stand by.
 
-## Getting Started
+  ### You may find DEMO link here: [DEMO LINK](https://rick-the-cucumber.vercel.app/)
 
-First, run the development server:
+  ## This project was created with:
+  - Next.js
+  - Redux
+  - Tailwind CSS
+  - DaisyUI
+  - his majesty TypeScript
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### How to use:
+- On the home page, you’re encouraged to search for your favorite TV show hero. Just type in the person's name, and you'll see all versions of them across different dimensions and crazy worlds.
+- Swipe left and right to view all search results.
+- To learn more about a person you've found, simply click on their name.
+- You can also browse heroes from the TV show by clicking the 'Heroes' button. There are all of them, like 47 pages. No kidding.
+- Want to know more about one of your favorite or weird heroes? Click on their card to see a special page with details such as their name, world of residence, dead or alive status, and a table - with all episodes featuring them.
+- You can sort the episodes by title, air date, or season/episode code. Just click on the appropriate column header in the table.
+- Click on an episode in the table to learn more about it. On the episode page, you will see information about the air date and cards of all heroes starring in that episode. Of course, the cards are clickable.
+- Browse through the worlds of Rick and Morty adventures by clicking on the "Places" button. All worlds are clickable.
+- Click on a world card to see more details, such as who lives there.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  ## To install it localy:
+  - clone the project:
+    ```
+    git clone https://github.com/lesdyman/rick-the-cucumber.git
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ```
+  - then install all dependencies:
+    ```
+    npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ```
+  - start the project on local host:
+    ```
+    npm run dev
+    ```
+   - It will not open in prowser automaticaly. So just click on local host link in your terminal.
+   
+   ## Hope you'll find it fun! Cheers!

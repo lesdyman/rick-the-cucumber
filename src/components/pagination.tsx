@@ -4,7 +4,11 @@ interface PaginationProps {
   onPageChange: (newPage: number) => void;
 }
 
-export const Pagination: React.FC<PaginationProps> = ({ page, totalPages, onPageChange }) => {
+export const Pagination: React.FC<PaginationProps> = ({
+  page,
+  totalPages,
+  onPageChange,
+}) => {
   const getPageNumbers = () => {
     const range = 4;
     let start = Math.max(page - Math.floor(range / 2), 1);
@@ -19,13 +23,17 @@ export const Pagination: React.FC<PaginationProps> = ({ page, totalPages, onPage
 
   return (
     <div className="join flex justify-center m-10">
-      <button className="join-item btn" disabled={page === 1} onClick={() => onPageChange(page - 1)}>
+      <button
+        className="join-item btn"
+        disabled={page === 1}
+        onClick={() => onPageChange(page - 1)}
+      >
         &lt; Prev
       </button>
       {getPageNumbers().map((num) => (
         <button
           key={num}
-          className={`join-item btn ${page === num ? 'btn-active' : ''}`}
+          className={`join-item btn ${page === num ? "btn-active" : ""}`}
           onClick={() => onPageChange(num)}
         >
           {num}

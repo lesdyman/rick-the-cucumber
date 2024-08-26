@@ -1,7 +1,7 @@
-'use client';
-import { useRouter } from 'next/navigation';
-import Image from 'next/image';
-import { Character } from '@/types/Character';
+"use client";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
+import { Character } from "@/types/Character";
 
 type Props = {
   item: Character;
@@ -20,12 +20,7 @@ const Card: React.FC<Props> = ({ item }) => {
       onClick={handleClick}
     >
       <figure>
-        <Image
-          src={item.image}
-          alt={item.name}
-          width={400}
-          height={300}
-        />
+        <Image src={item.image} alt={item.name} width={400} height={300} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{item.name}</h2>
